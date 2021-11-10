@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+.forste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem 5rem;
+
+}
+
+
+p {
+    padding: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1.3rem;
+    text-align: justify;
+}
