@@ -10,11 +10,52 @@ header{
 img {
     max-width: 80vw;
 }
+a {
+    text-decoration: none;
+
+}
+.navigasjon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .logo {
- width: 10vw;  
- margin-top: 5px; 
+ width: 60px;  
+ margin-top: 10px; 
  padding-left: 10px;
+ padding-right: 0;
  display: inline;
+}
+.pil img{
+    max-width: 5vw;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pil{
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    padding-top: 10px;
+
+}
+/*
+a .pil {
+    vertical-align: center;
+    text-decoration: none;
+}
+*/
+
+span {
+    display: flex;
+    flex-direction: column;
+}
+span p {
+    padding: 0;
+    color: black;
+    text-decoration: none;
 }
 
 /* -----KNAPP------- */
@@ -29,13 +70,17 @@ button{
 #menybilde {
     max-width: 40px;
     margin: 0;
-    padding: 4px;
+    padding-top: 15px;
     display: inline;
+    /*
     position:fixed;
     top: 5%;
     right: 5%;
+    
     transform: translate(-40%, -60%);
+    */
     background-color:rgb(173, 216, 230,0.5)  ;
+    
     
 }
 .dropdowncontent {
@@ -43,6 +88,7 @@ button{
     position: fixed;
     right: 0%;
     top: 0%;
+    
     height: 100vh;
     background-color:white ;
     min-width: 160px;
@@ -62,9 +108,11 @@ button{
   
   
 .dropdown {
+    /*
     position: relative;
     width: 10vw;
     margin-left: 40vw;
+    */
     display: inline;
     
 }
@@ -78,20 +126,26 @@ button{
       }
 
 .dropdown:hover .dropdowncontent {display: block;} and main {filter: blur(8px);}
+
 .active a{
-    color: blue;
+    color: black;
+    text-decoration: #add8e6 underline 2px;
 }
 
 .sosialemedier img{
     width: 5vh;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
     padding-right:0 ;
+    text-align: center;
 }
 .sosialemedier{
     border:transparent;
-    
+    padding-left: 0;
+    padding-right:0 ;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
    
 }
 /*
@@ -105,7 +159,7 @@ p {
     text-align: justify;
     
 }
-img {
+.stortbilde {
     width: 80vw;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -116,6 +170,12 @@ h1{
     margin-right: auto;
     text-align: center;
     padding-top: 2rem;
+}
+/*----Første side ferdig --------*/
+/*---- Andre side starter --------*/
+
+.velkommen p{
+    padding: 1rem;
 }
 
 /* for å ikke få så stort mellomrom mellom avsnittene */
