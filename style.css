@@ -7,9 +7,7 @@ header{
     min-height: 10vh;
     width: 100%;
 }
-img {
-    max-width: 80vw;
-}
+
 a {
     text-decoration: none;
 
@@ -152,7 +150,7 @@ button{
  ------  KNAPP FERDIG ---------*/
 
 p {
-    padding: 2rem;
+    padding: 1rem;
     margin-top: auto;
     margin-bottom: auto;
     line-height: 1.3rem;
@@ -163,6 +161,8 @@ p {
     width: 80vw;
     padding-left: 3rem;
     padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   
 }
 h1{
@@ -171,18 +171,49 @@ h1{
     text-align: center;
     padding-top: 2rem;
 }
-/*----Første side ferdig --------*/
-/*---- Andre side starter --------*/
-
-.velkommen p{
-    padding: 1rem;
-}
-
 /* for å ikke få så stort mellomrom mellom avsnittene */
 #tekstmidten {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+/*----Første side ferdig --------*/
+/*---- Velkommen side starter --------*/
+
+.velkommen p{
+    padding: 1rem;
+}
+#auditorium{
+    max-width: 100vw;
+    padding-top: 1rem;
+
+}
+/*---- Oppgave side starter --------*/
+h2 {
+    padding-left: 2rem;
+}
+
+.kilder {
+    border-top:solid grey 1px ;
+    margin-top: 2rem;
+    font-size: 80%;
+}
+.kilder p {
+    padding: 0.5rem;
+    
+}
+
+/*
+SKAL VI HA FOOTER??
+footer {
+    background-color: #add8e6;
+    height: 5vh;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
+*/
+
  
 @media only screen and (min-width: 960px){
  main{
