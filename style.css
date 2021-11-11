@@ -2,13 +2,49 @@
     margin: 0;
     padding:0;
 }
+header{
+    background-color: #add8e6;
+    height: 10vh;
+}
+img {
+    max-width: 80vw;
+}
+
+.navigasjon {
+        position: relative;
+        display: inline-block;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+     }
+
+     .dropdowncontent a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: table-row;
+      }
+.dropdown:hover .dropdowncontent {display: block;}
 
 
-.avsnitt {
+@media only screen and (min-width: 960px){
+ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
@@ -33,9 +69,5 @@ img {
     margin: 2rem 2rem;
 
 }
-header{
-    background-color: #add8e6;
-    height: 120px;
-    background-size: cover;
-    background-position: center;
+
 }
