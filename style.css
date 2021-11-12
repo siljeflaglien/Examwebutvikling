@@ -38,12 +38,14 @@ img {
     padding-top: 10px;
 
 }
+/* Sosialemedier bilde størrelse*/
 .sosialemedier img{
     width: 5vh;
     padding-left: 0;
     padding-right:0 ;
     text-align: center;
 }
+/* For å få bildene uten padding og plassert i midten av plassen */
 .sosialemedier{
     border:transparent;
     padding-left: 0;
@@ -231,18 +233,26 @@ footer {
         color: black;
         text-decoration: #add8e6 underline 2px;
     }
+
+    /* For å fjerne piler nede på de små */
+    .pilfooter, .smfooter {
+        display: none;
+    }
+    
     
    
 }
 
 @media only screen and (min-width: 750px){
+    /* For å gjemme bort meny knappen og alt i den */
 .dropdownbtn, .navpil, #menybilde, button, .smnav{
-    visibility: hidden;
+    display: none;
     max-height: 10vh;
 }
 header {
     height: 10vh;
 }
+/* Få navigasjons boksene på riktig plassering*/
 .nav{
     display: inline;
     display: flex;
@@ -253,19 +263,26 @@ header {
     right: 1%;
     
 }
+/* Mellomrom mellom nav boksene*/
 .nav > li {
     padding-left: 1rem;
     padding-right: 1rem;
-    ;
+    
 }
+/* Farge på teksten og boks rundt*/
 .nav a {
     color: black;
     border: black solid 1px;
     padding: 0.5rem;
 }
-
+/* Når du hoover over boksene*/
 .nav a:hover  {
-    background-color: lightgray;
+
+    border: white solid 1px;
+    
+}
+.active a{
+    color: black;
     border: white solid 1px;
     
 }
@@ -292,11 +309,23 @@ footer p {
     justify-content: space-evenly;
     
 }
-#pilfooter {
+/* klasse i sosialemedier ul footer, for å få ikonene vedsiden av hverandre*/
+.smikonfooter{
+    display: flex;
+    flex-direction: row;
+
+}
+.sosialemedier {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+}
+.pilfooter {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 
 
 }
