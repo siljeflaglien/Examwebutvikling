@@ -509,6 +509,8 @@ h2 {
     padding-left: 2rem;
     padding-right: 0;
 }
-
+.pil img {
+    width: 40px;
+}
 
 }
