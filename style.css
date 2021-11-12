@@ -335,26 +335,119 @@ footer p {
     margin-right: auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    width: 70vw;
+    width: 80vw;
     background-color: white;
     box-shadow: #333 2px 2px 15px;
 }
-main {background-image: linear-gradient(to bottom, #add8e6, #fff)}
+main {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-image: linear-gradient(to bottom, #add8e6, #fff)}
 
 #auditorium{
     max-width: 90%;
     margin-left: 5%;
 }
+.stortbilde{
+    max-width: 90%;
+    padding: 0;
+    margin-left: 5%;
+}
+.boks p{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pil span {
+    padding-bottom: 2rem;
+}
 }
 
 @media only screen and (min-width: 1000px){
- main{
+ /* main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
+}*/
+
+.hoved {
+    display: flex;
+    flex-direction: row;
 }
+header {
+    height: 122vh;
+    width: 20vw;
+    display: initial;
+    border: transparent
+}
+footer {
+    background-color: #add8e6;
+}
+.navigasjon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.boks{
+    border: transparent;
+    box-shadow: transparent 0 0 0 ;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: white;
+    padding: 0px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    
+
+}
+.nav li{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: black solid 1px;
+    width: 100%; 
+}
+.homeknapp, #homeknapp{
+    border-top: black solid 1px;
+    width: 100%;
+}
+.nav a {
+    padding: 0.0rem;
+    border: transparent;
+    
+}
+ .logo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 7vw;
+    padding-bottom: 1rem;
+}
+.homeknapp{
+    padding-left: 100rem;
+    padding-right: 40px;
+}
+.nav a:hover {
+    border: transparent;
+
+    text-decoration: underline solid 2px;
+    
+
+}
+.active {
+    text-decoration: underline solid  2px;
+    text-decoration-color:white ;
+}
+
+
 
 
 
