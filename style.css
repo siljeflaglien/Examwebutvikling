@@ -6,7 +6,7 @@ header{
     background-color: #add8e6;
     min-height: 10vh;
     width: 100%;
-    border-bottom: black solid 1px;
+    
     position: sticky;
     top: 0;
 }
@@ -274,7 +274,8 @@ footer {
     max-height: 10vh;
 }
 header {
-    height: 20vh;
+    height: 10vh;
+    min-height: 73px;
 }
 /* Få navigasjons boksene på riktig plassering*/
 .nav{
@@ -361,7 +362,9 @@ footer p {
 main {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    border-top: black solid 1px;
     background-image: linear-gradient(to bottom, #add8e6, #fff)}
+    
 
 #auditorium{
     max-width: 90%;
