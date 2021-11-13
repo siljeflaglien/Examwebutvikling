@@ -243,7 +243,8 @@ footer {
             display: table-row;
           }
     
-    .dropdown:hover .dropdowncontent {display: block;} and main {filter: blur(8px);}
+    .dropdown:hover .dropdowncontent {display: block;}
+    main:hover .dropdowncontent {display: none}
     .navigasjon{
         display: flex;
         flex-direction: row;
