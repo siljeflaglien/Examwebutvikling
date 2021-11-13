@@ -457,10 +457,9 @@ main{
     width: 100%;
 }
 .nav a {
-    padding: 0.0rem;
+    padding: 0rem;
     border: transparent;
     padding-left: 1rem;
-    
 }
  .logo {
     margin-left: auto;
@@ -476,6 +475,7 @@ main{
     border: transparent;
     text-decoration: underline solid 2px;
     
+    
 
 }
 .active {
@@ -485,10 +485,9 @@ main{
 
 .kilder {
     padding-left: 10rem;
-    background-image: linear-gradient(to right, #add8e6, #fff);
 }
 
-.pilfooter, footer, .boks, .velkommen{
+.pilfooter, footer, .boks, .velkommen, .kilder{
     background-image: linear-gradient(to right, #add8e6, #fff);
 } 
 
