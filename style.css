@@ -6,11 +6,12 @@ header{
     background-color: #add8e6;
     min-height: 10vh;
     width: 100%;
-    
+    border-bottom: black solid 1px;
     position: sticky;
     top: 0;
 }
-main {background-image: linear-gradient(to bottom, #add8e6, #fff);}
+main {background-image: linear-gradient(to bottom, #add8e6, #fff);
+    }
 
 
 a {
@@ -47,6 +48,7 @@ img {
 /* Sosialemedier bilde størrelse*/
 .sosialemedier img{
     width: 5vh;
+    min-width: 30px;
     padding-left: 0;
     padding-right:0 ;
     text-align: center;
@@ -192,6 +194,7 @@ footer {
         margin: 0;
         padding-top: 15px;
         display: inline;
+        padding-right: 10px;
         /*
         position:fixed;
         top: 5%;
@@ -362,7 +365,7 @@ footer p {
 main {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    border-top: black solid 1px;
+    
     background-image: linear-gradient(to bottom, #add8e6, #fff)}
     
 
