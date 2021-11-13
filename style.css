@@ -274,7 +274,7 @@ footer {
     max-height: 10vh;
 }
 header {
-    max-height: 20vh;
+    height: 20vh;
 }
 /* Få navigasjons boksene på riktig plassering*/
 .nav{
