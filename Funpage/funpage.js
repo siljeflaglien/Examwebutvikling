@@ -39,7 +39,6 @@ const clicked = (index) =>{
 }
 
 const resetSpill = () => {
-    nextMove = "X";
     for(let i = 0; i < 9; i++){
         let objekt = gridArray[i];
         gridArray[i].element.classList.remove('x', 'o', 'contentColor', 'vinnerColor');

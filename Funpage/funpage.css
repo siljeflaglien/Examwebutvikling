@@ -47,17 +47,10 @@ body{
 }
 
 .notClicked:hover::after{
-    content: 'X';
+    content: '?';
     color: rgba(221, 221, 221, 0.459);
     cursor: pointer;
 }
-
-
-/*.cell p {
-    color: #FF338F;
-    text-shadow: 0px 0px 25px rgb(255, 142, 212),
-                0px 0px 4px rgba(255, 255, 255, 0.952);;
-}*/
 
 .cell p:hover{
     cursor: default;
