@@ -26,12 +26,12 @@ const clicked = (index) =>{
     object.element.classList.remove('notClicked');
     object.state = nextMove;
 
-    if(nextMove == 'X'){
+    if(nextMove === 'X'){
         object.element.classList.add('x', 'contentColor');
-    } else if(nextMove = 'O'){
+    } else if(nextMove === 'O'){
         object.element.classList.add('o', 'contentColor');
     }
-    nextMove == 'X' ? (nextMove = 'O') : (nextMove = 'X');
+    nextMove === 'X' ? (nextMove = 'O') : (nextMove = 'X');
     object.element.onclick = function(){
         return false;
     }
@@ -40,7 +40,7 @@ const clicked = (index) =>{
 
 const resetSpill = () => {
     for(let i = 0; i < 9; i++){
-        let objekt = gridArray[i];
+        //let objekt = gridArray[i];
         gridArray[i].element.classList.remove('x', 'o', 'contentColor', 'vinnerColor');
         gridArray[i].element.classList.add('notClicked');
         gridArray[i].state = "";
@@ -48,6 +48,7 @@ const resetSpill = () => {
             clicked(i);
         };
     }
+    document.getElementById('reset').style.visibility = "hidden";
 }
 
 const visResetKnapp = () => {
@@ -63,8 +64,8 @@ const finnVinner = () => {
         let plass1 = vinnerLinjer[linje][0];
         let plass2 = vinnerLinjer[linje][1];
         let plass3 = vinnerLinjer[linje][2];
-        if(gridArray[plass1].state == gridArray[plass2].state && gridArray[plass1].state == gridArray[plass3].state){
-            if(gridArray[plass1].state == 'X' || gridArray[plass1].state == 'O'){
+        if(gridArray[plass1].state === gridArray[plass2].state && gridArray[plass1].state === gridArray[plass3].state){
+            if(gridArray[plass1].state === 'X' || gridArray[plass1].state === 'O'){
                 vinnerRad = linje;
                 gameOver();
             }
@@ -96,4 +97,4 @@ for(let index = 0; index < 9; index++){
         clicked(index);
     }
     grid.appendChild(div);
-};
+}

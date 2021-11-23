@@ -8,7 +8,7 @@ body{
     background-color: #131515;
     color: white;
     font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .welcome{
@@ -21,7 +21,7 @@ body{
     align-items: flex-start;
     justify-content: center;
     padding-top: 5%;
-    margin: 10% 5%;
+    margin: 5% 5%;
     height: 100%;
 }
 
@@ -43,7 +43,20 @@ body{
 
 .regler{
     width: 40vw;
-    padding: 3rem;
+    padding: 0 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.regler h2 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.regler p{
+    font-size: 1.2vw;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .notClicked:hover::after{
@@ -96,6 +109,19 @@ body{
 
     .cell {
         height: 1em;
+    }
+
+    .regler {
+        width: 90%;
+        padding-bottom: 2.5rem;
+    }
+
+    .regler h2 {
+        font-size: 3.5vw;
+    }
+
+    .regler p{
+        font-size: 1.8vw;
     }
 
 }
