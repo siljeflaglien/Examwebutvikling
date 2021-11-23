@@ -1,5 +1,6 @@
 let grid = document.getElementById("grid");
 let nextMove = 'X';
+let teller = 0;
 const gridArray = [];
 let vinnerRad = [];
 const vinnerLinjer = [
@@ -36,6 +37,10 @@ const clicked = (index) =>{
         return false;
     }
     finnVinner();
+    teller++;
+    if(teller === 9){
+        visResetKnapp();
+    }
 }
 
 const resetSpill = () => {
@@ -49,6 +54,7 @@ const resetSpill = () => {
         };
     }
     document.getElementById('reset').style.visibility = "hidden";
+    teller = 0;
 }
 
 const visResetKnapp = () => {
