@@ -43,7 +43,7 @@ body{
 
 .regler{
     width: 40vw;
-    padding: 0 3rem;
+    padding-left: 3rem;
     letter-spacing: 0.2rem;
 }
 
@@ -113,15 +113,15 @@ body{
 
     .regler {
         width: 90%;
-        padding-bottom: 2.5rem;
+        padding: 0 3rem 2.5rem 3rem;
     }
 
     .regler h2 {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 
     .regler p{
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
 
 }
