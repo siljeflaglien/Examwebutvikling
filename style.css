@@ -190,6 +190,11 @@ p{
     line-height: 1.5;
 }
 
+.link{
+    text-decoration: #11040a underline 3px;
+
+}
+
 /*
 SKAL VI HA FOOTER??
 footer {
