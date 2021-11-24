@@ -18,19 +18,23 @@ body{
 
 .spill {
     display: flex;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     justify-content: center;
     padding-top: 5%;
     margin: 5% 5%;
     height: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 #grid {
     display: grid;
     grid-template: repeat(3, 1.1fr) / repeat(3, 1.1fr);
-    width: 50%;
+    /*width: 50%;*/
     box-shadow: 2px 11px 15px -3px rgba(0,0,0,0.90);
-    font-size: 14vw;
+    /*font-size: 14vw;*/
+    width: 80%;
+    font-size: 23vw;
 }
 
 .cell {
@@ -38,23 +42,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1.1em;
+    /*height: 1.1em;*/
+    height: 1em;
 }
 
 .regler{
-    width: 40vw;
-    padding-left: 3rem;
+    /*width: 40vw;
+    padding-left: 3rem;*/
     letter-spacing: 0.2rem;
+    width: 80%;
+    padding: 0 0 2.5rem 0;
 }
 
 .regler h2 {
-    font-size: 3vw;
+    font-size: 4vw;
+    /*font-size: 3vw;*/
     text-transform: uppercase;
     margin-bottom: 0.7rem;
 }
 
 .regler p{
-    font-size: 1.2vw;
+    font-size: 2vw;
+    /*font-size: 1.2vw;*/
     line-height: 2rem;
     margin-bottom: 0.5rem;
 }
@@ -95,9 +104,9 @@ body{
     content: 'O';
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (min-width: 1000px){
 
-    .spill{
+    /*.spill{
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -122,6 +131,33 @@ body{
 
     .regler p{
         font-size: 2vw;
+    }*/
+
+    .spill {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #grid {
+        width: 50%;
+        font-size: 14vw;
+    }
+
+    .cell {
+        height: 1.1em;
+    }
+
+    .regler {
+        width: 40vw;
+        padding-left: 3rem;
+    }
+
+    .regler h2 {
+        font-size: 3vw;
+    }
+
+    .regler p{
+        font-size: 1.2vw;
     }
 
 }
