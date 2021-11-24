@@ -518,5 +518,18 @@ h2 {
 .pil img {
     width: 40px;
 }
+.avsnitt2{
+    display: block;
+        text-align: center;
+        font-size: 150%;
+}
+
+.databilde{
+    width: 70vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 }
