@@ -28,7 +28,9 @@
 body{
     width: 100%;
     height: 100vh;
-    
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 #forsteside {
     background-color: black;
@@ -48,7 +50,6 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-top: 20vh;
-   
 
 }
 
@@ -182,4 +183,125 @@ animation: line-anim 2s ease forwards 1.2s;
 .playknapp:hover::after, .playknapp:focus::after{
     opacity: 1;
 }
+
+.spill {
+    display: flex;
+    /*align-items: flex-start;*/
+    justify-content: center;
+    padding-top: 5%;
+    margin: 5% 5%;
+    height: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+    grid-template: repeat(3, 1.1fr) / repeat(3, 1.1fr);
+    /*width: 50%;*/
+    box-shadow: 2px 11px 15px -3px rgba(0,0,0,0.90);
+    /*font-size: 14vw;*/
+    width: 80%;
+    font-size: 23vw;
+}
+
+.cell {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 1.1em;*/
+    height: 1em;
+}
+
+.regler{
+    /*width: 40vw;
+    padding-left: 3rem;*/
+    letter-spacing: 0.2rem;
+    width: 80%;
+    padding: 0 0 2.5rem 0;
+}
+
+.regler h2 {
+    font-size: 4vw;
+    /*font-size: 3vw;*/
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.regler p{
+    font-size: 2vw;
+    /*font-size: 1.2vw;*/
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.notClicked:hover::after{
+    content: '?';
+    color: rgba(221, 221, 221, 0.459);
+    cursor: pointer;
+}
+
+.cell p:hover{
+    cursor: default;
+}
+
+.vinnerColor {
+    color: #fff127;
+    text-shadow: 0px 0px 25px rgb(255, 244, 142),
+                0px 0px 4px rgba(255, 255, 255, 0.952);;
+}
+
+#reset {
+    margin: 2rem;
+    padding: 0.5rem;
+    visibility: hidden;
+}
+
+.contentColor{
+    color: #FF338F;
+    text-shadow: 0px 0px 25px rgb(255, 142, 212),
+                0px 0px 4px rgba(255, 255, 255, 0.952);;
+}
+
+.x::after {
+    content: 'X';  
+}
+
+.o::after{
+    content: 'O';
+}
+
+
+@media screen and (min-width: 1000px){
+
+    .spill {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #grid {
+        width: 50%;
+        font-size: 14vw;
+    }
+
+    .cell {
+        height: 1.1em;
+    }
+
+    .regler {
+        width: 40vw;
+        padding-left: 3rem;
+    }
+
+    .regler h2 {
+        font-size: 3vw;
+    }
+
+    .regler p{
+        font-size: 1.2vw;
+    }
+
+}
+
 
