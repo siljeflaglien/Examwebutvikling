@@ -22,7 +22,9 @@ a {
 img {
     overflow: hidden;
 }
-
+span {
+    margin: 1rem;
+}
 .logo {
  width: 60px;  
  margin-top: 10px; 
