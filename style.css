@@ -170,6 +170,25 @@ h2 {
     padding: 0.5rem;
     
 }
+.avsnitt{
+    display: block;
+        text-align: center;
+        font-size: 150%;
+}
+
+.databilde{
+    width: 70vw;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
 
 /*
 SKAL VI HA FOOTER??
@@ -267,7 +286,6 @@ footer {
     .pilfooter, .smfooter {
         display: none;
     }
-    
     
    
 }
@@ -504,7 +522,10 @@ h2 {
 
 }
 
-
+p{
+    line-height: 1.5;
+    font-size: 20px;
+}
 
 #smartcity {
 
@@ -520,18 +541,6 @@ h2 {
 .pil img {
     width: 40px;
 }
-.avsnitt2{
-    display: block;
-        text-align: center;
-        font-size: 150%;
-}
 
-.databilde{
-    width: 70vw;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
 
 }
