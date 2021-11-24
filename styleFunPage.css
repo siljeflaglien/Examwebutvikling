@@ -1,0 +1,185 @@
+@font-face {
+    font-family: monotonregular;
+    src: url(Monoton-kit/monoton-regular-webfont.woff2) format('woff2'),
+         url(Monoton-kit/monoton-regular-webfont.woff) format('woff'),
+         url(Monoton-kit/monoton-regular-webfont.ttf) format('truetype'),
+         url(Monoton-kit/monoton-regular-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: concert_oneregular;
+    src: url(Font/Concertone.kit/concertone-regular-webfont.woff2) format('woff2'),
+         url(Font/Concertone.kit/concertone-regular-webfont.woff) format('woff'),
+         url(Font/Concertone.kit/concertone-regular-webfont.ttf) format('truetype'),
+         url(Font/Concertone.kit/concertone-regular-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+}
+#forsteside {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+}
+
+#logo{
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20vh;
+   
+
+}
+
+#andreside {
+    background-color: white;
+    height: 100vh;
+}
+#logo path:nth-child(1){
+stroke-dasharray: 363;
+stroke-dashoffset: 363;
+animation: line-anim 2s ease forwards;
+
+}
+
+#logo path:nth-child(2){
+stroke-dasharray: 231;
+stroke-dashoffset: 231;
+animation: line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3){
+stroke-dasharray: 480;
+stroke-dashoffset: 480; 
+animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4){
+stroke-dasharray:363 ;
+stroke-dashoffset: 363;
+animation: line-anim 2s ease forwards 0.9s; 
+}
+
+#logo path:nth-child(5){
+stroke-dasharray: 495;
+stroke-dashoffset:495 ; 
+animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6){
+    stroke-dasharray: 480;
+    stroke-dashoffset: 480 ; 
+    animation: line-anim 2s ease forwards 1.5s;  
+}
+
+#logo path:nth-child(7){
+    stroke-dasharray: 363;
+    stroke-dashoffset: 363; 
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8){
+    stroke-dasharray: 527 ;
+    stroke-dashoffset: 527; 
+    animation: line-anim 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(9){
+    stroke-dasharray: 525;
+    stroke-dashoffset: 525; 
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.playknapp{
+    font-size: 1.3rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: #E6FB04;
+    border:#E6FB04 0.098em solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.20em 1em 0.5em 1.2em;
+    border-radius: 0.20em;
+
+    box-shadow: inset 0 0 1em 0 #E6FB04 ,  0 0 1em 0 #E6FB04 ;
+    text-shadow:
+    0 0 1.125em whitesmoke,  0 0 1.145em #E6FB04;
+
+    position: relative;
+    transition: backround-color 100ms linear;
+
+    font-family: concert_oneregular, sans-serif;
+    
+}
+
+.playknapp::before{
+    content: ' ';
+    position: absolute;
+    background: #E6FB04;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1.6em);
+    opacity: 0.7;
+}
+
+
+.playknapp::after{
+  content: '';  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em #E6FB04;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+.playknapp:hover, .playknapp:focus{
+    background: #E6FB04;
+    color: black;
+    text-shadow: none;
+}
+
+.playknapp:hover::before, .playknapp:focus::before{
+    opacity: 1;
+
+}
+
+.playknapp:hover::after, .playknapp:focus::after{
+    opacity: 1;
+}
+
