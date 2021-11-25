@@ -27,3 +27,7 @@ bli enklere å dele de to kodene opp siden de var såpass forskjellige fra hvera
 klasser og id-er som het det samme, og det ble rett og slett bare mer oversiktlig å ha to
 stylesheets. Selvom vi fint kunne klart dette med kun et stylesheet gjordevi  altså dette for å
 få bedre oversikt og orden.
+
+Vi fikk inspirasjon av en youtube video for å få til "TIC TAC TOE" overskriften, som beveger seg når man refresher siden. her er linken: https://www.youtube.com/watch?v=vJNVramny9k. Måten han gjorde det på, fungerte ikke så vi måtte dermed regne ut path lenght selv. Vi brukte heller ikke js til å få til overskriften.
+
+Selve spillbrettet og koden for tic tac toe ble laget i javascript og er orginal. Spillbrettet, eller grid'en, ble laget i javascript slik at hver celle kunne lett brukes i javascript-koden videre. Selve javascript-koden er laget mye etter hva vi har lært av programmering i Java, samt at jeg har brukt diverse StackOverflow-forumer til å f.eks. finne gode metoder å bruke, men ingenting av selve koden er "copy-paste". 
