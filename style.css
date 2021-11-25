@@ -106,7 +106,7 @@ p {
     margin-top: auto;
     margin-bottom: auto;
     line-height: 1.3rem;
-    text-align: justify;
+    text-align: left;
     font-size: 18px;
     line-height: 1.5;
     
@@ -119,11 +119,7 @@ p {
     padding-bottom: 2rem;
   
 }
-#smartcity {
 
-    padding-left: 1rem;
-    
-}
 .smartcity img {
     max-width: 45%;
     margin-left: 1rem;
@@ -286,6 +282,9 @@ footer {
 header {
     height: 10vh;
     min-height: 73px;
+}
+p{
+    text-align: justify;
 }
 /* Få navigasjons boksene på riktig plassering*/
 .nav{
