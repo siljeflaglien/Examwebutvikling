@@ -1,23 +1,4 @@
-/*@font-face {
-    font-family: monotonregular;
-    src: url(Monoton-kit/monoton-regular-webfont.woff2) format('woff2'),
-         url(Monoton-kit/monoton-regular-webfont.woff) format('woff'),
-         url(Monoton-kit/monoton-regular-webfont.ttf) format('truetype'),
-         url(Monoton-kit/monoton-regular-webfont.svg) format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-@font-face {
-    font-family: concert_oneregular;
-    src: url(Font/Concertone.kit/concertone-regular-webfont.woff2) format('woff2'),
-         url(Font/Concertone.kit/concertone-regular-webfont.woff) format('woff'),
-         url(Font/Concertone.kit/concertone-regular-webfont.ttf) format('truetype'),
-         url(Font/Concertone.kit/concertone-regular-webfont.svg) format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
 *{
     padding: 0;
     margin: 0;
@@ -70,12 +51,7 @@ img {
 }
 
 #logo{
-    /*
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    */
+   
     width: 80%;
     margin-left: 10%;
     margin-top: 20vh;
@@ -223,9 +199,6 @@ animation: line-anim 2s ease forwards 1.2s;
 #grid {
     display: grid;
     grid-template: repeat(3, 1.1fr) / repeat(3, 1.1fr);
-    /*width: 50%;*/
-    /*box-shadow: 2px 11px 15px -3px rgba(0,0,0,0.90);*/
-    /*font-size: 14vw;*/
     width: 60%;
     font-size: 18vw;
     margin-bottom: 1.5rem;
