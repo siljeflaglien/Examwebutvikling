@@ -458,11 +458,13 @@ main{
     text-decoration: underline solid  2px;
     text-decoration-color:white ;
 }
-
-.kilder {
-    padding: 5rem;
-    font-size: 20px;
+.kilder{
+    padding: 1rem 0;
 }
+.kilder p {
+font-size: 18px;
+}
+
 
 .pilfooter, footer, .boks, .velkommen, .kilder{
     background-image: linear-gradient(to right, #add8e6, #fff);
