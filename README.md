@@ -1,7 +1,7 @@
 # Examwebutvikling
 I denne eksamensinnlevering i webutvikling og inkludernde design har vi laget en nettsted
 bestående av 5 nettsider, hvor én av sidene skiller seg ut fra de andre. Denne siden blir
-kalt "The Fun Page" og er hvor gruppa vår fikk utløp for våres kreative sider.
+kalt "The Fun Page" og er hvor vår gruppe fikk utløp for våres kreative sider.
 
 Nettstedet vårt går i utgangspunktet ut på hvordan det er å være førsteårselev på OsloMet, 
 universitetet vi studerer hos. Nettsidene tar oss igjennom ulike opplevelser ved å være 
