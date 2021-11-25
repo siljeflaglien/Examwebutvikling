@@ -232,10 +232,12 @@ h2{
         flex-direction: row;
         justify-content: space-between;
     }
+
     .active a{
         color: black;
         text-decoration: #add8e6 underline 2px;
     }
+
    .nav a:hover {
        text-decoration: #add8e6 underline 2px;
        
