@@ -48,7 +48,7 @@ span {
     padding-top: 10px;
 
 }
-/* Sosialemedier bilde størrelse*/
+
 .sosialemedier img{
     width: 5vh;
     min-width: 30px;
@@ -56,7 +56,7 @@ span {
     padding-right:0 ;
     text-align: center;
 }
-/* For å få bildene uten padding og plassert i midten av plassen */
+
 .sosialemedier{
     border:transparent;
     padding-left: 0;
@@ -139,14 +139,13 @@ h2{
 
     text-align: center;
 }
-/* for å ikke få så stort mellomrom mellom avsnittene */
+
 #tekstmidten {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-/*----Første side ferdig --------*/
-/*---- Velkommen side starter --------*/
+
 
 .velkommen p{
     padding: 1rem;
@@ -157,7 +156,7 @@ h2{
 
 }
 
-/*---- Oppgave side starter --------*/
+
 
 
 
@@ -169,18 +168,9 @@ h2{
 
 }
 
-/*
-SKAL VI HA FOOTER??
-footer {
-    background-color: #add8e6;
-    height: 5vh;
-    display: flexbox;
-    flex-direction: column;
-    justify-content: center;
-}
-*/
+
 @media only screen and (max-width: 750px){
-    /* ------- KNAPP ------ */
+
     button{
         border: 1px solid #fff;
         
@@ -195,13 +185,7 @@ footer {
         padding-top: 15px;
         display: inline;
         padding-right: 10px;
-        /*
-        position:fixed;
-        top: 5%;
-        right: 5%;
-        
-        transform: translate(-40%, -60%);
-        */
+    
         background-color:rgb(173, 216, 230,0.5)  ;
         
         
@@ -231,11 +215,6 @@ footer {
       
       
     .dropdown {
-        /*
-        position: relative;
-        width: 10vw;
-        margin-left: 40vw;
-        */
         display: inline;
         
     }
@@ -261,7 +240,7 @@ footer {
        text-decoration: #add8e6 underline 2px;
    }
 
-    /* For å fjerne piler nede på de små */
+    
     .pilfooter, .smfooter {
         display: none;
     }
@@ -270,7 +249,7 @@ footer {
 }
 
 @media only screen and (min-width: 750px){
-    /* For å gjemme bort meny knappen og alt i den */
+ 
 .dropdownbtn, .navpil, #menybilde, button, .smnav{
     display: none;
     max-height: 10vh;
@@ -282,7 +261,7 @@ header {
 p{
     text-align: justify;
 }
-/* Få navigasjons boksene på riktig plassering*/
+
 .nav{
     display: inline;
     display: flex;
@@ -293,19 +272,19 @@ p{
     right: 1%;
     
 }
-/* Mellomrom mellom nav boksene*/
+
 .nav > li {
     padding-left: 1rem;
     padding-right: 1rem;
     
 }
-/* Farge på teksten og boks rundt*/
+
 .nav a {
     color: black;
     border: black solid 1px;
     padding: 0.5rem;
 }
-/* Når du hoover over boksene*/
+
 .nav a:hover  {
 
     border: white solid 1px;
@@ -338,7 +317,7 @@ footer p {
     justify-content: space-evenly;
     
 }
-/* klasse i sosialemedier ul footer, for å få ikonene vedsiden av hverandre*/
+
 .smikonfooter{
     display: flex;
     flex-direction: row;
@@ -396,13 +375,7 @@ main {
 }
 
 @media only screen and (min-width: 1000px){
- /* main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-}*/
+
 
 .hoved {
     display: flex;
@@ -484,11 +457,13 @@ main{
     text-decoration: underline solid  2px;
     text-decoration-color:white ;
 }
-
-.kilder {
-    padding: 5rem;
-    font-size: 20px;
+.kilder{
+    padding: 1rem 0;
 }
+.kilder p {
+font-size: 18px;
+}
+
 
 .pilfooter, footer, .boks, .velkommen, .kilder{
     background-image: linear-gradient(to right, #add8e6, #fff);
