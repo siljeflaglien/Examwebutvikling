@@ -93,11 +93,14 @@ span p {
 
 }
 
-/* -----KNAPP------- */
-
-/*
- ------  KNAPP FERDIG ---------*/
-
+ .kilder {
+    border-top:solid grey 1px ;
+}
+.kilder p {
+    padding: 0.5rem;
+    font-size: 15px ;
+    
+}
 p {
     padding: 1rem;
     margin-top: auto;
@@ -136,10 +139,13 @@ li{
     list-style-type: none;
 }
 h1{
-    margin-left: auto;
-    margin-right: auto;
+   
     text-align: center;
     padding-top: 2rem;
+}
+h2{
+
+    text-align: center;
 }
 /* for å ikke få så stort mellomrom mellom avsnittene */
 #tekstmidten {
@@ -160,36 +166,14 @@ h1{
 }
 
 /*---- Oppgave side starter --------*/
-h2 {
-    padding-left: 2rem;
-}
 
-.kilder {
-    border-top:solid grey 1px ;
-    font-size: 80%;
-}
-.kilder p {
-    padding: 0.5rem;
-    
-}
-.avsnitt{
-    display: block;
-        text-align: center;
-        font-size: 150%;
-}
 
-.databilde{
-    width: 70vw;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
+
 
 
 
 .link{
-    text-decoration: #11040a underline 2px;
+    text-decoration: #11040a underline 1px;
 
 }
 
@@ -507,7 +491,8 @@ main{
 }
 
 .kilder {
-    padding-left: 10rem;
+    padding: 5rem;
+    font-size: 20px;
 }
 
 .pilfooter, footer, .boks, .velkommen, .kilder{
