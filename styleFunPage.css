@@ -213,7 +213,7 @@ animation: line-anim 2s ease forwards 1.2s;
     display: none;
     /*align-items: flex-start;*/
     justify-content: center;
-    padding-top: 19%;
+    padding-top: 3rem;
     margin: 5% 5% 1% 5%;
     height: 100%;
     flex-direction: column-reverse;
@@ -312,7 +312,7 @@ animation: line-anim 2s ease forwards 1.2s;
     .spill {
         flex-direction: row;
         align-items: flex-start;
-        padding-top: 12rem;
+        padding-top: 5rem;
     }
 
     #grid {
