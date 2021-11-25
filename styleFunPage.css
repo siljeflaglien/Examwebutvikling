@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: monotonregular;
     src: url(Monoton-kit/monoton-regular-webfont.woff2) format('woff2'),
          url(Monoton-kit/monoton-regular-webfont.woff) format('woff'),
@@ -17,7 +17,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 *{
     padding: 0;
     margin: 0;
@@ -32,6 +32,35 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    position: absolute;
+    height: 50vh;
+    top: 50vh;
+    width: 100%;
+}
+
+#forsideLink {
+    position: sticky;
+    top: 2rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.54);
+    background: transparent;
+
+}
+
+#forsideLink:hover {
+    color: white;
+}
+
 #forsteside {
     background-color: black;
     height: 100vh;
@@ -50,13 +79,9 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-top: 20vh;
-
+    margin-bottom: 3%;
 }
 
-#andreside {
-    background-color: white;
-    height: 100vh;
-}
 #logo path:nth-child(1){
 stroke-dasharray: 363;
 stroke-dashoffset: 363;
@@ -185,11 +210,11 @@ animation: line-anim 2s ease forwards 1.2s;
 }
 
 .spill {
-    display: flex;
+    display: none;
     /*align-items: flex-start;*/
     justify-content: center;
-    padding-top: 5%;
-    margin: 5% 5%;
+    padding-top: 19%;
+    margin: 5% 5% 1% 5%;
     height: 100%;
     flex-direction: column-reverse;
     align-items: center;
@@ -199,10 +224,11 @@ animation: line-anim 2s ease forwards 1.2s;
     display: grid;
     grid-template: repeat(3, 1.1fr) / repeat(3, 1.1fr);
     /*width: 50%;*/
-    box-shadow: 2px 11px 15px -3px rgba(0,0,0,0.90);
+    /*box-shadow: 2px 11px 15px -3px rgba(0,0,0,0.90);*/
     /*font-size: 14vw;*/
     width: 80%;
     font-size: 23vw;
+    margin-bottom: 1.5rem;
 }
 
 .cell {
@@ -247,21 +273,29 @@ animation: line-anim 2s ease forwards 1.2s;
 }
 
 .vinnerColor {
-    color: #fff127;
-    text-shadow: 0px 0px 25px rgb(255, 244, 142),
-                0px 0px 4px rgba(255, 255, 255, 0.952);;
+    color: #E6FB04;
+    text-shadow: 0 0 25px rgb(255, 244, 142),
+                0 0 4px rgba(255, 255, 255, 0.952);;
 }
 
 #reset {
-    margin: 2rem;
-    padding: 0.5rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    margin-bottom: 8em;
     visibility: hidden;
+    display: none;
+}
+
+#reset:hover {
+    background-color: #E6FB04;
 }
 
 .contentColor{
-    color: #FF338F;
-    text-shadow: 0px 0px 25px rgb(255, 142, 212),
-                0px 0px 4px rgba(255, 255, 255, 0.952);;
+    color: #ff00f5;
+    text-shadow: 0 0 25px rgb(255, 142, 212),
+                0 0 4px rgba(255, 255, 255, 0.952);;
 }
 
 .x::after {
@@ -278,11 +312,16 @@ animation: line-anim 2s ease forwards 1.2s;
     .spill {
         flex-direction: row;
         align-items: flex-start;
+        padding-top: 12rem;
     }
 
     #grid {
         width: 50%;
         font-size: 14vw;
+    }
+
+    #reset {
+        bottom: 18%;
     }
 
     .cell {

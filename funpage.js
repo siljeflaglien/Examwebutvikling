@@ -22,6 +22,7 @@ class GridCells{
     }
 }
 
+//Endrer en tom celle til enten o eller x.
 const clicked = (index) =>{
     let object = gridArray[index];
     object.element.classList.remove('notClicked');
@@ -43,6 +44,7 @@ const clicked = (index) =>{
     }
 }
 
+//Reseter endringene som er blitt gjort i spillet for å starte en ny runde.
 const resetSpill = () => {
     for(let i = 0; i < 9; i++){
         //let objekt = gridArray[i];
@@ -57,6 +59,7 @@ const resetSpill = () => {
     teller = 0;
 }
 
+//Gjør reset-knappen tilgjengelig.
 const visResetKnapp = () => {
     document.getElementById('reset').style.visibility = "visible";
     document.getElementById('reset').onclick = function(){
@@ -64,6 +67,7 @@ const visResetKnapp = () => {
     }
 }
 
+//Sjekker fort hvert trekk om det finnes en rad med tre like symboler.
 const finnVinner = () => {  
     for(let linje in vinnerLinjer){
         //Fiks indexene så man ikke trenger variablene.
@@ -79,6 +83,7 @@ const finnVinner = () => {
     }
 }
 
+//Når det finnes en rad med tre like symboler gjøres den gul, de resterende rutene kan ikke klikkes på og reset-knappen blir tilgjengelig.
 function gameOver() {  
     for(let tall of vinnerLinjer[vinnerRad]){
         gridArray[tall].element.classList.add('vinnerColor');
@@ -93,6 +98,7 @@ function gameOver() {
     visResetKnapp();
 }
 
+//Setter opp spillbrettet
 for(let index = 0; index < 9; index++){
     let div = document.createElement('div');
     div.classList.add('notClicked', 'cell');
@@ -103,4 +109,10 @@ for(let index = 0; index < 9; index++){
         clicked(index);
     }
     grid.appendChild(div);
+}
+
+//Når noen trykker på "Play" vil spillet bli tilgjengelig.
+document.getElementById("playknapp").onclick = function(){
+    document.getElementById("spill").style.display = "flex";
+    document.getElementById("reset").style.display = "inline-block"
 }
