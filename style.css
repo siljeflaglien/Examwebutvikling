@@ -226,7 +226,6 @@ h2{
           }
     
     .dropdown:hover .dropdowncontent {display: block;}
-    *:hover .dropdowncontent {display: none; }
     main:hover .dropdowncontent {display: none;}
     .navigasjon{
         display: flex;
