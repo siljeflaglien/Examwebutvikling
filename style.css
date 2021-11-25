@@ -104,6 +104,8 @@ p {
     margin-bottom: auto;
     line-height: 1.3rem;
     text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
     
 }
 .stortbilde {
@@ -184,14 +186,10 @@ h2 {
     padding-bottom: 2rem;
 }
 
-p{
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
-}
+
 
 .link{
-    text-decoration: #11040a underline 3px;
+    text-decoration: #11040a underline 2px;
 
 }
 
