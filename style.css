@@ -226,8 +226,8 @@ h2{
           }
     
     .dropdown:hover .dropdowncontent {display: block;}
-    p:hover .dropdowncontent {display: none}
-    main:hover .dropdowncontent {display: none}
+    *:hover .dropdowncontent {display: none; }
+    main:hover .dropdowncontent {display: none;}
     .navigasjon{
         display: flex;
         flex-direction: row;
@@ -239,6 +239,7 @@ h2{
     }
    .nav a:hover {
        text-decoration: #add8e6 underline 2px;
+       
    }
 
     
