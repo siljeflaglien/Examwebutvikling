@@ -47,9 +47,9 @@ img {
 }
 
 #forsideLink {
-    position: sticky;
+    position: absolute;
     top: 2rem;
-    padding-right: 2rem;
+    right: 2rem;
     text-decoration: none;
     text-align: right;
     color: rgba(255, 255, 255, 0.54);
@@ -214,7 +214,7 @@ animation: line-anim 2s ease forwards 1.2s;
     /*align-items: flex-start;*/
     justify-content: center;
     padding-top: 3rem;
-    margin: 5% 5% 1% 5%;
+    margin: 15% 5% 1% 5%;
     height: 100%;
     flex-direction: column-reverse;
     align-items: center;
@@ -312,7 +312,8 @@ animation: line-anim 2s ease forwards 1.2s;
     .spill {
         flex-direction: row;
         align-items: flex-start;
-        padding-top: 5rem;
+        padding-top: 3rem;
+        margin-top: 20%;
     }
 
     #grid {
